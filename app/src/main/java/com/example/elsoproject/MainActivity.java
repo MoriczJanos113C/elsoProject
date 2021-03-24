@@ -13,7 +13,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button gomb1 = findViewById(R.id.button1);
-        EditText info = findViewById(R.id.editt);
     }
 }
