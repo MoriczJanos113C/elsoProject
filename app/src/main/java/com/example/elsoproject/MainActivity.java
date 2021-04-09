@@ -28,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             Intent i = new Intent(MainActivity.this, NewActivity.class);
             i.putExtra("uzenet", karakter.getText().toString());
-            i.putExtra("uzenet", Skin.getText().toString());
+            i.putExtra("key","karakter");
+            i.putExtra("uzenet2", Skin.getText().toString());
 
-            i.putExtra("key","value");
 
+            i.putExtra("key2","Skin");
             startActivity(i);
 
         }
