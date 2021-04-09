@@ -6,22 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
+    <TextView
+        android:id="@+id/cim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/edittext"
-        android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/gomb"
-        android:text="Elküld"
+        android:text="League of legends Karakter választó"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/edittext"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+
+        />
+
+    <ImageView
+        android:id="@+id/kep"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@drawable/lol"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/cim"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/kep"
+        android:hint="Karakter neve"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/karakter"
         />
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/Skin"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:hint="Skin"
+        android:layout_below="@id/karakter"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
 
-</RelativeLayout>
+    <RadioGroup
+        android:id="@+id/gombok"
+        android:layout_below="@id/Skin"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioButton
+            android:padding="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F- Flash, D- Heal"
+            />
+
+        <RadioButton
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F- Heal, D- Flash"
+
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/kuldes"
+        android:layout_width="1000dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/gombok"
+        android:text="Mehet!"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="GLHF"
+        android:layout_below="@id/kuldes"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        />
+
+    </RelativeLayout>
+
